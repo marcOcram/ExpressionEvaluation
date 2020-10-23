@@ -1,0 +1,48 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <Platforms>AnyCPU;x64</Platforms>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <OutputPath></OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutputPath />
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <OutputPath></OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutputPath />
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="BenchmarkDotNet" Version="0.12.1" />
+    <PackageReference Include="BenchmarkDotNet.Diagnostics.Windows" Version="0.12.1" />
+    <PackageReference Include="CodingSeb.ExpressionEvaluator" Version="1.4.16" />
+    <PackageReference Include="DynamicExpresso.Core" Version="2.3.3" />
+    <PackageReference Include="IronPython" Version="2.7.10" />
+    <PackageReference Include="Jint" Version="3.0.0-beta-1828" />
+    <PackageReference Include="Jurassic" Version="3.1.0" />
+    <PackageReference Include="Microsoft.ClearScript" Version="6.0.2" />
+    <PackageReference Include="Microsoft.CodeAnalysis.CSharp.Scripting" Version="3.7.0" />
+    <PackageReference Include="MoonSharp" Version="2.0.0" />
+    <PackageReference Include="Nil.JS" Version="2.5.1466" />
+    <PackageReference Include="NLua" Version="1.5.3" />
+    <PackageReference Include="NReco.LambdaParser" Version="1.0.12" />
+    <PackageReference Include="pythonnet_netstandard_py38_win" Version="2.5.1" />
+    <PackageReference Include="Z.Expressions.Eval" Version="4.0.22" />
+  </ItemGroup>
+
+</Project>
